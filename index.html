@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -22,7 +23,30 @@
     </style>
 </head>
 <body class="font-roboto">
-    <header></header>
+    <header class="md:w-4/5 mx-auto mt-12 w-[90%]">
+        <!-- Navbar -->
+         <nav class="flex items-center justify-between mb-5">
+            <!-- Navbar Left -->
+             <div>
+                <img class="w-60 md:w-72" src="./resources/icons/logo.png" alt="">
+             </div>
+            <!-- Navbar Right -->
+             <div class="hidden md:block">
+                <div class="flex gap-x-12">
+                    <p class="font-medium text-[#3C3C3C] text-base cursor-pointer">Home</p>
+                    <p class="font-medium text-[#3C3C3C] text-base cursor-pointer">Product</p>
+                    <p class="font-medium text-[#3C3C3C] text-base cursor-pointer">About Us</p>
+                    <p class="font-medium text-[#3C3C3C] text-base cursor-pointer">Contact Us</p>
+                </div>
+             </div>
+             <div class="cursor-pointer block md:hidden ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" class="text-[#363958] text-base"> 
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                  </svg>
+                  
+             </div>
+         </nav>
+    </header>
 
     <main></main>
 
